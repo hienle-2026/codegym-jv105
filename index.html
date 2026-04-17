@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <div>
+        <input id="userName" placeholder="Username" type="text"/>
+    </div>
+    <div>
+        <input id="pass" placeholder="Password" type="password"/>
+        <button id="btn" onclick="togglePass()" type="button">Show pass</button>
+    </div>
+</form>
+<script>
+    const togglePass = () => {
+        const passEl = document.querySelector('#pass');
+        const inputType = passEl.getAttribute('type');
+        const btnEL = document.querySelector('#btn');
+        if (inputType === 'password'){
+            passEl.setAttribute('type', 'text');
+            btnEL.innerHTML = "Hide pass";
+        } else {
+            passEl.setAttribute('type', 'password');
+            btnEL.innerHTML = "Show pass";
+        }
+    }
+
+</script>
+</body>
+</html>
