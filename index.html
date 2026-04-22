@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button class="btn" data-id="+">+</button>
+    <button class="btn" data-id="-">-</button>
+    <button class="btn" data-id="x">x</button>
+    <button class="btn" data-id="/">/</button>
+    <script>
+        const btnEl =document.querySelectorAll('.btn')
+        console.log(btnEl[0].dataset.id);
+        // btnEl.forEach(btnEl => {
+        //     btnEl.addEventListener('click', () => {
+        //         alert('sssssssssss')
+        //     })
+        // })
+    </script>
+</body>
+</html>
